@@ -1,0 +1,29 @@
+<!doctype html>
+	<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#stop").click(function(){
+		$("#mydiv1").css("background","yellow").css("color","red").slideUp(5000).slideDown(5000).slideToggle(5000);
+		});
+	});
+	</script>
+	</head>
+	<body>	
+	<h1>Fade In Effect	</h1>
+
+	
+	<button id="stop">chaining</button>
+	<br>	<br>
+
+<div id="mydiv1" style="width:50px;height:50px;background:red; position: relative;">gowthaman</div>
+
+<div id="mydiv2" style="width:50px;height:50px;background:green;;"></div>
+	
+<div id="mydiv3" style="width:50px;height:50px;background:blue; "></div>
+
+<img src="d:/images/1.jpg" style="position: relative;">
+	</body>
+	</html>

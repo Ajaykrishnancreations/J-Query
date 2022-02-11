@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">		
+		$(document).ready(function(){
+			$("#prebut").click(function(){
+				//alert("hai");				
+				$("h1").prepend("gowthaman");
+			});
+			$("#appbut").click(function(){				
+				$("h1").append("gowthaman");				
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<input type="button" id="prebut" value="prepend">
+	<input type="button" id="appbut" value="append">
+	<h1>this is jquery text </h1>
+
+</body>
+</html>

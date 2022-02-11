@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery_3_6_0_offline.js"></script>
+
+	<script type="text/javascript">		
+		$(document).ready(function(){
+			$("#prebut").click(function(){
+				//alert("hai");				
+				$("h1").prepend("gowthaman");
+			});
+			$("#appbut").click(function(){				
+				$("h1").append("gowthaman");				
+			});
+			$("#afterbut").click(function(){				
+				$("h1").after("gowthaman");
+			});
+			$("#removebut").click(function(){				
+				$("h1").remove();
+				//$("body").remove();
+			});
+			$("#showbut").click(function(){				
+				$("h1").show();
+				//$("body").show();
+			});
+			$("#hidebut").click(function(){				
+				$("h1").hide();
+				//$("body").show();
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<input type="button" id="prebut" value="prepend">
+	<input type="button" id="appbut" value="append">
+	<input type="button" id="afterbut" value="after">
+	<input type="button" id="removebut" value="remove">
+	<input type="button" id="showbut" value="show">
+	<input type="button" id="hidebut" value="hide">
+	<h1>this is jquery text </h1>
+
+</body>
+</html>

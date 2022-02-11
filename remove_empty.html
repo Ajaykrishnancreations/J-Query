@@ -1,0 +1,37 @@
+<!doctype html>
+	<html>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+	$("#but").click(function(){
+	$("#div1").remove(); 
+	});	
+	$("#but1").click(function(){
+	$("#div1").empty(); //  all clear
+	});	
+	$("#but2").click(function(){
+	$("#div1").show(); 	
+	});	
+	$("#but3").click(function(){
+	$("#div1").hide(); 	
+	});	
+	});
+</script>
+</head>
+<body>	
+<h1> remove vs empty </h1>
+	<button id="but"> remove </button>
+	<button id="but1"> empty </button>
+	<button id="but2"> show </button>
+	<button id="but3"> hide </button>
+	<br><br>
+	<div id="div1" style="height:300px;background-color:red;">
+	<p class="p1"> this is paragraph1</p>
+	<p> this is paragraph2</p>
+	<div>this is nested div</div>
+	<p> this is paragraph3</p>
+	</div>
+	data
+</body>
+</html>

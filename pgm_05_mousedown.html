@@ -1,0 +1,41 @@
+<!doctype html>
+	<html>
+	<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".md").hover(function(){
+			$("img").hide(3000);
+			//$(".md").css("background-color","red");
+			$(this).css("background-color","red");
+			$(this).css("color","white");
+			$(this).css("font-size",44);
+		});
+		$(".sd").hover(function(){
+			$("img").show(3000);
+
+		});
+		$("#t1").focus(function(){
+			$("img").show(3000);
+			$(this).css("background-color","red");
+			$(this).css("color","white");
+			$(this).css("font-size",44);
+			$(this).css("border","none");
+			$(this).css("outline","none");
+
+		});
+	});
+	</script>
+	</head>
+	<body>	
+	
+	<input type="text" id="t1" placeholder="put cursor inside">
+	<br>
+	<button class="md">hide</button>
+	<button class="sd">show</button>
+		<br>		<br>
+	<img src="d:/images/1.jpg" width="600" height="auto"></img>
+	</body>
+	</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+	<html>
+	<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+	$(".su").click(function() {
+	$("img").slideUp(3000);	
+	});
+
+	$(".sd").click(function() {
+	$("img").slideDown(4000);	
+	});
+
+	$(".st").click(function() {
+	$("img").slideToggle(3500);	
+	});
+	});
+	</script>
+	</head>
+	<body>	
+	
+	<button class="su">slide up work</button>
+	<button class="sd">slide down work</button>
+	<button class="st">slide toggle (show/hide) work</button>
+		<br>		<br>
+	<img src="d:/images/1.jpg" width="600" height="auto"></img>
+	</body>
+	</html>

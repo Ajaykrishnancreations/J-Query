@@ -1,0 +1,33 @@
+<!doctype html>
+	<html>
+	<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$("#but").click(function(){
+			//var v1=parseInt($("#T1").val());
+			//var v2=parseInt($("#T2").val());
+			var v1=parseFloat($("#T1").val());
+			var v2=parseFloat($("#T2").val());
+			
+			$("#T3").val(v1+v2);
+		});
+	});
+	</script>
+	</head>
+	<body>	
+		<form>
+			Enter Number1:
+			<input type="text" id="T1">
+				<br>
+			Enter Number2:
+			<input type="text" id="T2">
+				<br>
+			Result Text:
+			<input type="text" id="T3" disabled>
+			<input type="button" id="but" value="clickme">
+		</form>
+	</body>
+	</html>
